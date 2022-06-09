@@ -641,6 +641,7 @@ ul {
   margin: 0;
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  margin-top: 0;
 }
 .footer-box {
   display: flex;
@@ -652,6 +653,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .media-links .link {
   display: flex;
@@ -686,6 +688,7 @@ ul {
 .footer-form {
   display: flex;
   flex-direction: row;
+  margin-bottom: 34px;
 }
 
 .footer-form input {
@@ -726,6 +729,8 @@ ul {
   letter-spacing: 0.06em;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   padding: 10px 28px 10px 29px;
   min-width: 143px;
