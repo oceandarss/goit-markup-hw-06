@@ -1,0 +1,48 @@
+.icon-set {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.icon-set__item {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: $secondaryBackgroundColor;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature__description {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feature__item {
+    width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
