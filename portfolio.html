@@ -22,37 +22,56 @@
   </head>
   <body>
     <header class="header header--decorate">
-      <nav class="container nav-header">
-        <a href="#" class="logo"><span>Web</span>Studio</a>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="./index.html" class="menu__link">Студия</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link--current">Потфолио</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="address-nav">
-          <li class="address-nav__item">
-            <a class="address-nav__link" href="mailto:info@devstudio.com">
-              <svg class="address-nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="address-nav__item">
-            <a class="address-nav__link" href="tel:+380961111111">
-              <svg class="address-nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+      <nav class="nav-header container">
+        <div class="mobile-header">
+          <a href="#" class="logo"><span>Web</span>Studio</a>
+          <button
+            class="menu-button"
+            type="button"
+            data-menu-button
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40">
+              <use
+                class="icon-close"
+                href="./images/icons.svg#close-menu"
+              ></use>
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container" data-menu>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a href="№" class="menu__link menu__link--current">Потфолио</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="address-nav">
+            <li class="address-nav__item">
+              <a class="address-nav__link" href="mailto:info@devstudio.com">
+                <svg class="address-nav__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="address-nav__item">
+              <a class="address-nav__link" href="tel:+380961111111">
+                <svg class="address-nav__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -81,9 +100,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_1.jpg"
-                alt="Экран ноутбука с открытым веб-окном"
-                width="370"
+                src="./images/sample1.jpg"
+                srcset="./images/sample1.jpg 1x, ./images/sample1@2.jpg 2x"
+                alt=""
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -93,7 +112,7 @@
                 </p>
               </div>
             </div>
-            <div class="caption-container">
+            <div class="caption-container caption-container--first">
               <p class="samples__title caption">Технокряк</p>
               <p class="samples__description caption">Веб-сайт</p>
             </div>
@@ -102,9 +121,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_2.jpg"
+                src="./images/sample2.jpg"
+                srcset="./images/sample2.jpg 1x, ./images/sample2@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -125,9 +144,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_3.jpg"
+                src="./images/sample3.jpg"
+                srcset="./images/sample3.jpg 1x, ./images/sample3@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -146,9 +165,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_4.jpg"
+                src="./images/sample4.jpg"
+                srcset="./images/sample4.jpg 1x, ./images/sample4@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -167,9 +186,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_5.jpg"
+                src="./images/sample5.jpg"
+                srcset="./images/sample5.jpg 1x, ./images/sample5@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -188,9 +207,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_6.jpg"
+                src="./images/sample6.jpg"
+                srcset="./images/sample6.jpg 1x, ./images/sample6@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -209,9 +228,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_7.jpg"
+                src="./images/sample7.jpg"
+                srcset="./images/sample7.jpg 1x, ./images/sample7@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -230,9 +249,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_8.jpg"
+                src="./images/sample8.jpg"
+                srcset="./images/sample8.jpg 1x, ./images/sample8@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -251,9 +270,9 @@
             <div class="samples__image--container">
               <img
                 class="samples__image"
-                src="./images/picture_9.jpg"
+                src="./images/sample9.jpg"
+                srcset="./images/sample9.jpg 1x, ./images/sample9@2.jpg 2x"
                 alt=""
-                width="370"
               />
               <div class="samples__box">
                 <p class="samples__text">
@@ -272,24 +291,26 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-box--first">
-          <nav class="footer-nav">
-            <a class="logo logo-footer" href="#"><span>Web</span>Studio</a>
-            <ul class="footer-nav__address">
-              <li>г. Киев, пр-т Леси Украинки, 26</li>
-              <li>
-                <a class="footer-nav__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a class="footer-nav__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </nav>
+      <div class="container footer-container">
+        <div class="footer-tablet">
+          <div class="footer-box--first">
+            <nav class="footer-nav">
+              <a class="logo logo-footer" href="#"><span>Web</span>Studio</a>
+              <ul class="footer-nav__address">
+                <li>г. Киев, пр-т Леси Украинки, 26</li>
+                <li>
+                  <a class="footer-nav__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="footer-box footer-media">
             <nav class="footer-media">
               <h3 class="footer-media__title">Присоединяйтесь</h3>
@@ -321,27 +342,28 @@
               </ul>
             </nav>
           </div>
-          <div class="footer-box subscribe-box">
-            <h3 class="subscribe-box__title">Подпишитесь на рассылку</h3>
-            <form class="footer-form">
-              <label for="mail"></label>
-              <input
-                class="footer-form__mail"
-                type="mail"
-                name="email"
-                id="mail"
-                placeholder="E-mail"
-              />
-              <button class="subscribe-box__button" type="submit">
-                Подписаться
-                <svg class="subscribe-box__icon" width="24" height="24">
-                  <use href="./images/icons.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="footer-box subscribe-box">
+          <h3 class="subscribe-box__title">Подпишитесь на рассылку</h3>
+          <form class="footer-form">
+            <label for="mail"></label>
+            <input
+              class="footer-form__mail"
+              type="mail"
+              name="email"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-box__button" type="submit">
+              Подписаться
+              <svg class="subscribe-box__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

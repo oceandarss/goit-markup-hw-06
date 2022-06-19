@@ -1,22 +1,52 @@
 .icon-set {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1140px) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    }
 }
 
-.icon-set__item {
-    padding: 0;
+.feature__icon {
+    border-radius: 4px;
+    background-color: $secondaryBackgroundColor;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    padding: 0;
     height: 120px;
-    border-radius: 4px;
-    background-color: $secondaryBackgroundColor;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1140px) {
+         width: 270px;
+    }
 }
 
 .feature {
+
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px;
+    }
+
+    @media screen and (min-width: 1140px) {
     display: flex;
+    }
+}
+
+.feature__box {
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+        margin: 30px;
+        width: 354px;
+    }
 }
 
 .feature__title {
@@ -30,7 +60,7 @@
 }
 
 .feature__description {
-    color: var(--secondary-text-color);
+    color: $secondaryTextColor;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.72;
@@ -39,10 +69,19 @@
     margin-bottom: 0;
 }
 
-.feature__item {
-    width: 270px;
+.feature__item {  
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        width: 270px;
+    }
+        
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 }

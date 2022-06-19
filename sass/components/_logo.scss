@@ -7,9 +7,18 @@
     color: $primaryTextColor;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        font-size: 26px;
+    }
 }
 
 .logo-footer {
@@ -17,4 +26,8 @@
     color: $primaryWhiteColor;
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }

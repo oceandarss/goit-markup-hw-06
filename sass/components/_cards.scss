@@ -1,4 +1,8 @@
 .section-cards {
+    @media screen and (max-width: 1139px) {
+        display: none; 
+    }
+
     padding-top: 0;
 }
 

@@ -22,37 +22,56 @@
   </head>
   <body>
     <header class="header">
-      <nav class="container nav-header">
-        <a href="#" class="logo"><span>Web</span>Studio</a>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link menu__link--current">Студия</a>
-          </li>
-          <li class="menu__item">
-            <a href="./portfolio.html" class="menu__link">Потфолио</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="address-nav">
-          <li class="address-nav__item">
-            <a class="address-nav__link" href="mailto:info@devstudio.com">
-              <svg class="address-nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="address-nav__item">
-            <a class="address-nav__link" href="tel:+380961111111">
-              <svg class="address-nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+      <nav class="nav-header container">
+        <div class="mobile-header">
+          <a href="#" class="logo"><span>Web</span>Studio</a>
+          <button
+            class="menu-button"
+            type="button"
+            data-menu-button
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40">
+              <use
+                class="icon-close"
+                href="./images/icons.svg#close-menu"
+              ></use>
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container" data-menu>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--current">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link">Потфолио</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="address-nav">
+            <li class="address-nav__item">
+              <a class="address-nav__link" href="mailto:info@devstudio.com">
+                <svg class="address-nav__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="address-nav__item">
+              <a class="address-nav__link" href="tel:+380961111111">
+                <svg class="address-nav__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -128,7 +147,7 @@
                   class="form__comment"
                 ></textarea>
               </div>
-              <div>
+              <div class="agreement">
                 <label class="checkbox">
                   <input
                     type="checkbox"
@@ -153,61 +172,63 @@
         </div>
       </section>
       <section class="section container">
-        <ul class="icon-set">
-          <li class="icon-set__item">
-            <svg class="icon" width="70" height="70">
-              <use href="./images/icons.svg#scales"></use>
-            </svg>
-            <a href=""></a>
-          </li>
-          <li class="icon-set__item">
-            <svg class="icon" width="70" height="70">
-              <use href="./images/icons.svg#clock"></use>
-            </svg>
-            <a href=""></a>
-          </li>
-          <li class="icon-set__item">
-            <svg class="]icon" width="70" height="70">
-              <use href="./images/icons.svg#diagram"></use>
-            </svg>
-            <a href=""></a>
-          </li>
-          <li class="icon-set__item">
-            <svg class="icon" width="70" height="70">
-              <use href="./images/icons.svg#astronaut"></use>
-            </svg>
-            <a href=""></a>
-          </li>
-        </ul>
         <ul class="feature">
-          <li class="feature__item">
-            <h3 class="">Внимание к деталям</h3>
-            <p class="feature__description">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li class="feature__item">
-            <h3 class="feature__title">Пунктуальность</h3>
-            <p class="feature__description">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li class="feature__item">
-            <h3 class="feature__title">Планирование</h3>
-            <p class="feature__description">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li class="feature__item">
-            <h3 class="feature__title">Современные технологии</h3>
-            <p class="feature__description">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
+          <div class="feature__box">
+            <li class="feature__item">
+              <div class="feature__icon icon-set">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#scales"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">Внимание к деталям</h3>
+              <p class="feature__description">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+          </div>
+          <div class="feature__box">
+            <li class="feature__item">
+              <div class="feature__icon icon-set">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">Пунктуальность</h3>
+              <p class="feature__description">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+          </div>
+          <div class="feature__box">
+            <li class="feature__item">
+              <div class="feature__icon icon-set">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">Планирование</h3>
+              <p class="feature__description">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+          </div>
+          <div class="feature__box">
+            <li class="feature__item">
+              <div class="feature__icon icon-set">
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="feature__title">Современные технологии</h3>
+              <p class="feature__description">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="container section section-cards">
@@ -252,10 +273,9 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/expert_1.jpg"
+                src="./images/member1.jpg"
+                srcset="./images/member1.jpg 1x, ./images/member1@2.jpg 2x"
                 alt="Мужчина улыбается на белом фоне"
-                width="270"
-                height="260"
               />
               <h4 class="team__member">Игорь Демьяненко</h4>
               <p class="team__description">Product Designer</p>
@@ -289,10 +309,9 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/expert_2.jpg"
+                src="./images/member2.jpg"
+                srcset="./images/member2.jpg 1x, ./images/member2@2.jpg 2x"
                 alt="Женщина с белыми волосами улыбается"
-                width="270"
-                height="260"
               />
               <h4 class="team__member">Ольга Репина</h4>
               <p class="team__description">Frontend Developer</p>
@@ -326,10 +345,9 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/expert_3.jpg"
+                src="./images/member3.jpg"
+                srcset="./images/member3.jpg 1x, ./images/member3@2.jpg 2x"
                 alt="Мужчина в белой рубашке улыбается"
-                width="270"
-                height="260"
               />
               <h4 class="team__member">Николай Тарасов</h4>
               <p class="team__description">Marketing</p>
@@ -363,10 +381,9 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/expert_4.jpg"
+                src="./images/member4.jpg"
+                srcset="./images/member4.jpg 1x, ./images/member4@2.jpg 2x"
                 alt="Мужчина в очках"
-                width="270"
-                height="260"
               />
               <h4 class="team__member">Михаил Ермаков</h4>
               <p class="team__description">UI Designer</p>
@@ -463,24 +480,26 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-box--first">
-          <nav class="footer-nav">
-            <a class="logo logo-footer" href="#"><span>Web</span>Studio</a>
-            <ul class="footer-nav__address">
-              <li>г. Киев, пр-т Леси Украинки, 26</li>
-              <li>
-                <a class="footer-nav__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a class="footer-nav__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </nav>
+      <div class="container footer-container">
+        <div class="footer-tablet">
+          <div class="footer-box--first">
+            <nav class="footer-nav">
+              <a class="logo logo-footer" href="#"><span>Web</span>Studio</a>
+              <ul class="footer-nav__address">
+                <li>г. Киев, пр-т Леси Украинки, 26</li>
+                <li>
+                  <a class="footer-nav__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="footer-box footer-media">
             <nav class="footer-media">
               <h3 class="footer-media__title">Присоединяйтесь</h3>
@@ -512,28 +531,29 @@
               </ul>
             </nav>
           </div>
-          <div class="footer-box subscribe-box">
-            <h3 class="subscribe-box__title">Подпишитесь на рассылку</h3>
-            <form class="footer-form">
-              <label for="mail"></label>
-              <input
-                class="footer-form__mail"
-                type="mail"
-                name="email"
-                id="mail"
-                placeholder="E-mail"
-              />
-              <button class="subscribe-box__button" type="submit">
-                Подписаться
-                <svg class="subscribe-box__icon" width="24" height="24">
-                  <use href="./images/icons.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="footer-box subscribe-box">
+          <h3 class="subscribe-box__title">Подпишитесь на рассылку</h3>
+          <form class="footer-form">
+            <label for="mail"></label>
+            <input
+              class="footer-form__mail"
+              type="mail"
+              name="email"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-box__button" type="submit">
+              Подписаться
+              <svg class="subscribe-box__icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
